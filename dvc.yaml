@@ -3,6 +3,8 @@ stages:
     cmd: python download_data.py
     deps:
     - download_data.py
+    outs:
+    - data_raw.csv
   process:
     cmd: python preprocess.py
     deps:
